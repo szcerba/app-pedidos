@@ -1,10 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,36 +20,36 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
+
 body {
   line-height: 1;
   width: 100vw;
   overflow-x: hidden;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: none;
-}
+  content: none; }
+
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 app-root {
   min-height: 100svh;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
+/*# sourceMappingURL=styles.css.map */
