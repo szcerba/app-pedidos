@@ -14,7 +14,7 @@ header {
 header::before{
   position: absolute;
   content: "";
-  background-image: url("./../../../../assets/img/portada.jpg");
+  background-image: url("../../../../../public/assets/img/portada.jpg");
   background-position: center;
   background-size: cover;
   top: 0;
@@ -35,6 +35,7 @@ h1 {
   font-size: xx-large;
   font-weight: 800;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .extendido {

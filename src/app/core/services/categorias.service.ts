@@ -14,4 +14,10 @@ export class CategoriasService {
     const res = await fetch("assets/data/database.json");
     return await res.json();
   }
+
+  async getById(id: number): Promise<Categoria | undefined> {
+    const res = await fetch("assets/data/database.json");
+    const resJson: Categoria[] = await res.json();
+    return resJson.find(categoria => categoria.id == id);
+  }
 }

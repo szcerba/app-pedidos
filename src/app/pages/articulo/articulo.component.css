@@ -1,0 +1,48 @@
+/*
+Error: Invalid CSS after "...olor: variables": expected ";", was ".$color-princip..."
+        on line 41 of articulo.component.scss
+
+36: 
+37: textarea {
+38:   display: block;
+39:   border-radius: 20px;
+40:   border: unset;
+41:   background-color: variables.$color-principal-claro;
+42:   margin-top: 10px;
+43:   width: 100%;
+44: }
+45: 
+46: #cantidadContainer {
+
+Backtrace:
+articulo.component.scss:41
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:786:in `block in try_declaration'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `rethrow'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
+C:/Ruby30-x64/bin/sass:25:in `load'
+C:/Ruby30-x64/bin/sass:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 41 of articulo.component.scss\A \A 36: \A 37: textarea {\A 38:   display: block;\A 39:   border-radius: 20px;\A 40:   border: unset;\A 41:   background-color: variables.$color-principal-claro;\A 42:   margin-top: 10px;\A 43:   width: 100%;\A 44: }\A 45: \A 46: #cantidadContainer {"; }
