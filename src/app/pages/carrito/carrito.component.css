@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "...olor: variables": expected ";", was ".$color-princip..."
-        on line 10 of contador-cantidad.component.scss
+        on line 15 of carrito.component.scss
 
-5: #container {
-6:   display: flex;
-7:   justify-content: space-between;
-8:   width: 80px;
-9:   height: $altura;
-10:   background-color: variables.$color-principal-claro;
-11:   border-radius: 10px;
-12:   overflow: hidden;
-13:   border: 1px solid black;
-14: }
-15: 
+10: 
+11: .tarjeta-producto-container {
+12:   position: relative;
+13:   display: flex;
+14:   height: 100px;
+15:   background-color: variables.$color-principal-claro;
+16:   > div {
+17:     display: flex;
+18:     flex-direction: column;
+19:     justify-content: space-between;
+20:     padding: 10px;
 
 Backtrace:
-contador-cantidad.component.scss:10
+carrito.component.scss:15
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
@@ -45,4 +45,4 @@ C:/Ruby30-x64/bin/sass:25:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 10 of contador-cantidad.component.scss\A \A 5: #container {\A 6:   display: flex;\A 7:   justify-content: space-between;\A 8:   width: 80px;\A 9:   height: $altura;\A 10:   background-color: variables.$color-principal-claro;\A 11:   border-radius: 10px;\A 12:   overflow: hidden;\A 13:   border: 1px solid black;\A 14: }\A 15: "; }
+  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 15 of carrito.component.scss\A \A 10: \A 11: .tarjeta-producto-container {\A 12:   position: relative;\A 13:   display: flex;\A 14:   height: 100px;\A 15:   background-color: variables.$color-principal-claro;\A 16:   > div {\A 17:     display: flex;\A 18:     flex-direction: column;\A 19:     justify-content: space-between;\A 20:     padding: 10px;"; }
