@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,yCAAyC;AAEzC,eAAgB;EACd,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,IAAI;;AAId,eAAgB;EACd,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,IAAI;;AAGX,GAAI;EACF,MAAM,EAAE,IAAI",
+"sources": ["buscar.component.scss"],
+"names": [],
+"file": "buscar.component.css"
+}
