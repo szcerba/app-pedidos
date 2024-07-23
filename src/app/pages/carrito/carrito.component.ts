@@ -6,6 +6,7 @@ import {ContadorCantidadComponent} from "../../core/components/contador-cantidad
 import {Producto} from "../../core/interfaces/productos";
 import {ProductosService} from "../../core/services/productos.service";
 import {RouterModule} from "@angular/router";
+import {PerfilService} from "../../core/services/perfil.service";
 
 @Component({
   selector: 'app-carrito',
@@ -23,6 +24,7 @@ export class CarritoComponent implements OnInit {
   headerService = inject(HeaderService);
   cartService = inject(CartService);
   productosService = inject(ProductosService);
+  perfilService = inject(PerfilService);
 
   productosCarrito: Producto[] = [];
 

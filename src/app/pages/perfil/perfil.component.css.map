@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAE;EACA,SAAS,EAAE,KAAK;;AAGlB,cAAe;EACb,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;;AAGxB,IAAK;EACH,GAAG,EAAE,IAAI;;AAGX,QAAS;EACP,GAAG,EAAE,GAAG;;AAGV,MAAO;EACL,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,IAAI",
+"sources": ["perfil.component.scss"],
+"names": [],
+"file": "perfil.component.css"
+}
