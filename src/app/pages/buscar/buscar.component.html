@@ -17,5 +17,9 @@
   </div>
 </form>
 <div id="contenedor-productos">
-  <app-tarjeta-producto *ngFor="let producto of productos" [producto]="producto"/>
+  <app-tarjeta-producto
+    *ngFor="let producto of productos"
+    [producto]="producto"
+    [routerLink]="['/articulo',producto.id]"
+    routerLinkActive="router-link-active"/>
 </div>

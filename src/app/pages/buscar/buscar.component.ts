@@ -6,11 +6,12 @@ import {Busqueda} from "../../core/interfaces/busqueda";
 import {ProductosService} from "../../core/services/productos.service";
 import {TarjetaProductoComponent} from "../../core/components/tarjeta-producto/tarjeta-producto.component";
 import { Producto } from '../../core/interfaces/productos';
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-buscar',
   standalone: true,
-  imports: [CommonModule, FormsModule, TarjetaProductoComponent],
+  imports: [CommonModule, FormsModule, TarjetaProductoComponent, RouterLinkActive, RouterLink],
   templateUrl: './buscar.component.html',
   styleUrl: './buscar.component.scss'
 })

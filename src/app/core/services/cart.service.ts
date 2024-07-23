@@ -46,4 +46,9 @@ export class CartService {
   actualizarAlmacenamiento() {
     localStorage.setItem('carrito', JSON.stringify(this.carrito))
   }
+
+  vaciar() {
+    this.carrito = []
+    localStorage.removeItem('carrito')
+  }
 }

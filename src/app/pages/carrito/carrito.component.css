@@ -1,21 +1,21 @@
 /*
 Error: Invalid CSS after "...olor: variables": expected ";", was ".$color-princip..."
-        on line 15 of carrito.component.scss
+        on line 21 of carrito.component.scss
 
-10: 
-11: .tarjeta-producto-container {
-12:   position: relative;
-13:   display: flex;
-14:   height: 100px;
-15:   background-color: variables.$color-principal-claro;
-16:   > div {
-17:     display: flex;
-18:     flex-direction: column;
-19:     justify-content: space-between;
-20:     padding: 10px;
+16: 
+17: .tarjeta-producto-container {
+18:   position: relative;
+19:   display: flex;
+20:   height: 100px;
+21:   background-color: variables.$color-principal-claro;
+22: 
+23:   > div {
+24:     display: flex;
+25:     flex-direction: column;
+26:     justify-content: space-between;
 
 Backtrace:
-carrito.component.scss:15
+carrito.component.scss:21
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
@@ -45,4 +45,4 @@ C:/Ruby30-x64/bin/sass:25:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 15 of carrito.component.scss\A \A 10: \A 11: .tarjeta-producto-container {\A 12:   position: relative;\A 13:   display: flex;\A 14:   height: 100px;\A 15:   background-color: variables.$color-principal-claro;\A 16:   > div {\A 17:     display: flex;\A 18:     flex-direction: column;\A 19:     justify-content: space-between;\A 20:     padding: 10px;"; }
+  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 21 of carrito.component.scss\A \A 16: \A 17: .tarjeta-producto-container {\A 18:   position: relative;\A 19:   display: flex;\A 20:   height: 100px;\A 21:   background-color: variables.$color-principal-claro;\A 22: \A 23:   > div {\A 24:     display: flex;\A 25:     flex-direction: column;\A 26:     justify-content: space-between;"; }
