@@ -1,8 +1,8 @@
 <img id="fotoProducto" src="{{producto?.fotoUrl}}" alt="{{producto?.nombre}}">
-<div class="margen-chico">
+<section class="margen-chico">
   <ul>
     <span>Ingredientes: </span>
-    <li *ngFor="let ingrediente of producto?.ingredientes">{{ingrediente}}</li>
+    <li *ngFor="let ingrediente of producto?.ingredientes">{{ ingrediente }}</li>
   </ul>
   <div>
     <div class="apto-container" *ngIf="producto?.esCeliaco">
@@ -23,4 +23,4 @@
 
   <button (click)="agregarAlCarrito()">Agregar al carrito</button>
 
-</div>
+</section>

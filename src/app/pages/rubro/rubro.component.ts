@@ -1,7 +1,6 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {Component, inject, OnInit, signal, WritableSignal} from '@angular/core';
 import {HeaderService} from "../../core/services/header.service";
-import {ProductosService} from "../../core/services/productos.service";
-import {ActivatedRoute, RouterLink, RouterLinkActive, RouterModule} from "@angular/router";
+import {ActivatedRoute, RouterModule} from "@angular/router";
 import {Producto} from "../../core/interfaces/productos";
 import {CommonModule} from "@angular/common";
 import {TarjetaProductoComponent} from "../../core/components/tarjeta-producto/tarjeta-producto.component";
@@ -19,10 +18,9 @@ import {CategoriasService} from "../../core/services/categorias.service";
 export class RubroComponent implements OnInit {
 
   headerService = inject(HeaderService);
-  productosService = inject(ProductosService);
   categoriasService = inject(CategoriasService);
   ac = inject(ActivatedRoute);
-  productos: Producto[] = []
+  productos: WritableSignal<Producto[]> = signal([])
 
   ngOnInit(): void {
     this.headerService.titulo.set("Rubro");
@@ -31,7 +29,7 @@ export class RubroComponent implements OnInit {
         this.categoriasService.getById(parseInt(params['id']))
           .then(categoria => {
             if (categoria) {
-              this.productos = categoria.productos;
+              this.productos.set(categoria.productos);
               this.headerService.titulo.set(categoria.nombre);
             }
           });

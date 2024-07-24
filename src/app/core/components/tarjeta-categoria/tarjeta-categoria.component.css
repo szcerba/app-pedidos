@@ -1,16 +1,48 @@
-div {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  background-size: cover;
-  justify-content: center;
-  align-items: flex-end;
-  border-radius: 10px; }
+/*
+Error: Invalid CSS after "...dius: variables": expected ";", was ".$border-radius..."
+        on line 11 of tarjeta-categoria.component.scss
 
-h3 {
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-  background-color: rgba(255, 255, 255, 0.86); }
+6:   display: flex;
+7:   background-size: cover;
+8:   background-position: center;
+9:   justify-content: center;
+10:   align-items: flex-end;
+11:   border-radius: variables.$border-radius-chico;
+12: }
+13: 
+14: h3 {
+15:   width: 100%;
+16:   text-align: center;
 
-/*# sourceMappingURL=tarjeta-categoria.component.css.map */
+Backtrace:
+tarjeta-categoria.component.scss:11
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:786:in `block in try_declaration'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `rethrow'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
+C:/Ruby30-x64/bin/sass:25:in `load'
+C:/Ruby30-x64/bin/sass:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...dius: variables\": expected \";\", was \".$border-radius...\"\A         on line 11 of tarjeta-categoria.component.scss\A \A 6:   display: flex;\A 7:   background-size: cover;\A 8:   background-position: center;\A 9:   justify-content: center;\A 10:   align-items: flex-end;\A 11:   border-radius: variables.$border-radius-chico;\A 12: }\A 13: \A 14: h3 {\A 15:   width: 100%;\A 16:   text-align: center;"; }

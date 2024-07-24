@@ -1,72 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+Error: Invalid CSS after "  color: variables": expected ";", was ".$color-texto;"
+        on line 40 of styles.scss
+
+35: body {
+36:   line-height: 1;
+37:   width: 100vw;
+38:   overflow-x: hidden;
+39:   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+40:   color: variables.$color-texto;
+41: }
+42: 
+43: ol, ul {
+44:   list-style: none;
+45: }
+
+Backtrace:
+styles.scss:40
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:786:in `block in try_declaration'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:in `rethrow'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
+C:/Ruby30-x64/bin/sass:25:in `load'
+C:/Ruby30-x64/bin/sass:25:in `<main>'
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1;
-  width: 100vw;
-  overflow-x: hidden;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-app-root {
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
-
-.margen-chico {
-  margin: 10px; }
-
-.negrita {
-  font-weight: bold; }
-
-.flex-center {
-  display: flex;
-  justify-content: center; }
-
-.flex-apart {
-  display: flex;
-  justify-content: space-between; }
-
-/*# sourceMappingURL=styles.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  color: variables\": expected \";\", was \".$color-texto;\"\A         on line 40 of styles.scss\A \A 35: body {\A 36:   line-height: 1;\A 37:   width: 100vw;\A 38:   overflow-x: hidden;\A 39:   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\A 40:   color: variables.$color-texto;\A 41: }\A 42: \A 43: ol, ul {\A 44:   list-style: none;\A 45: }"; }

@@ -1,17 +1,21 @@
 /*
-Error: Invalid CSS after "...olor: variables": expected ";", was ".$color-principal;"
-        on line 26 of tabs.component.scss
+Error: Invalid CSS after "...dius: variables": expected ";", was ".$border-radius..."
+        on line 7 of tabs.component.scss
 
-21:   }
-22:   transition: 200ms ease-in-out;
-23: }
-24: 
-25: .seleccionado {
-26:   background-color: variables.$color-principal;
-27: }
+2: 
+3: #container {
+4:   display: flex;
+5:   justify-content: space-around;
+6:   background-color: #e5e5e5;
+7:   border-radius: variables.$border-radius-chico variables.$border-radius-mediano 0 0;
+8:   overflow: hidden;
+9:   height: 80px;
+10: }
+11: 
+12: .tab {
 
 Backtrace:
-tabs.component.scss:26
+tabs.component.scss:7
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
@@ -20,7 +24,7 @@ C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1183:
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:791:in `try_declaration'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
+C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
@@ -41,4 +45,4 @@ C:/Ruby30-x64/bin/sass:25:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-principal;\"\A         on line 26 of tabs.component.scss\A \A 21:   }\A 22:   transition: 200ms ease-in-out;\A 23: }\A 24: \A 25: .seleccionado {\A 26:   background-color: variables.$color-principal;\A 27: }"; }
+  content: "Error: Invalid CSS after \"...dius: variables\": expected \";\", was \".$border-radius...\"\A         on line 7 of tabs.component.scss\A \A 2: \A 3: #container {\A 4:   display: flex;\A 5:   justify-content: space-around;\A 6:   background-color: #e5e5e5;\A 7:   border-radius: variables.$border-radius-chico variables.$border-radius-mediano 0 0;\A 8:   overflow: hidden;\A 9:   height: 80px;\A 10: }\A 11: \A 12: .tab {"; }

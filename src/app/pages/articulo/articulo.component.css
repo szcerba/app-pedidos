@@ -1,21 +1,21 @@
 /*
-Error: Invalid CSS after "...olor: variables": expected ";", was ".$color-princip..."
-        on line 41 of articulo.component.scss
+Error: Invalid CSS after "...dius: variables": expected ";", was ".$border-radius..."
+        on line 39 of articulo.component.scss
 
+34:   }
+35: }
 36: 
 37: textarea {
 38:   display: block;
-39:   border-radius: 20px;
+39:   border-radius: variables.$border-radius-chico;
 40:   border: unset;
 41:   background-color: variables.$color-principal-claro;
 42:   margin-top: 10px;
 43:   width: 100%;
-44: }
-45: 
-46: #cantidadContainer {
+44:   resize: vertical;
 
 Backtrace:
-articulo.component.scss:41
+articulo.component.scss:39
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
@@ -45,4 +45,4 @@ C:/Ruby30-x64/bin/sass:25:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 41 of articulo.component.scss\A \A 36: \A 37: textarea {\A 38:   display: block;\A 39:   border-radius: 20px;\A 40:   border: unset;\A 41:   background-color: variables.$color-principal-claro;\A 42:   margin-top: 10px;\A 43:   width: 100%;\A 44: }\A 45: \A 46: #cantidadContainer {"; }
+  content: "Error: Invalid CSS after \"...dius: variables\": expected \";\", was \".$border-radius...\"\A         on line 39 of articulo.component.scss\A \A 34:   }\A 35: }\A 36: \A 37: textarea {\A 38:   display: block;\A 39:   border-radius: variables.$border-radius-chico;\A 40:   border: unset;\A 41:   background-color: variables.$color-principal-claro;\A 42:   margin-top: 10px;\A 43:   width: 100%;\A 44:   resize: vertical;"; }

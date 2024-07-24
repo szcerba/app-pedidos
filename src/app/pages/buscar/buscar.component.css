@@ -8,7 +8,7 @@ Error: Invalid CSS after "...olor: variables": expected ";", was ".$color-princi
 5:   align-items: center;
 6:   height: 30px;
 7:   background-color: variables.$color-principal-claro;
-8:   border-radius: 25px;
+8:   border-radius: variables.$border-radius-chico;
 9:   margin: 20px 10%;
 10:   padding: 5px 10px;
 11: 
@@ -45,4 +45,4 @@ C:/Ruby30-x64/bin/sass:25:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 7 of buscar.component.scss\A \A 2: \A 3: #barra-busqueda {\A 4:   display: flex;\A 5:   align-items: center;\A 6:   height: 30px;\A 7:   background-color: variables.$color-principal-claro;\A 8:   border-radius: 25px;\A 9:   margin: 20px 10%;\A 10:   padding: 5px 10px;\A 11: \A 12:   input {"; }
+  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 7 of buscar.component.scss\A \A 2: \A 3: #barra-busqueda {\A 4:   display: flex;\A 5:   align-items: center;\A 6:   height: 30px;\A 7:   background-color: variables.$color-principal-claro;\A 8:   border-radius: variables.$border-radius-chico;\A 9:   margin: 20px 10%;\A 10:   padding: 5px 10px;\A 11: \A 12:   input {"; }

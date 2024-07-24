@@ -1,21 +1,21 @@
 /*
-Error: Invalid CSS after "...olor: variables": expected ";", was ".$color-princip..."
-        on line 21 of carrito.component.scss
+Error: Invalid CSS after "...dius: variables": expected ";", was ".$border-radius..."
+        on line 13 of carrito.component.scss
 
+8: 
+9: #tarjetas-container {
+10:   display: flex;
+11:   flex-direction: column;
+12:   gap: 15px;
+13:   border-radius: variables.$border-radius-chico;
+14:   overflow: hidden;
+15: }
 16: 
 17: .tarjeta-producto-container {
 18:   position: relative;
-19:   display: flex;
-20:   height: 100px;
-21:   background-color: variables.$color-principal-claro;
-22: 
-23:   > div {
-24:     display: flex;
-25:     flex-direction: column;
-26:     justify-content: space-between;
 
 Backtrace:
-carrito.component.scss:21
+carrito.component.scss:13
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
 C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
@@ -45,4 +45,4 @@ C:/Ruby30-x64/bin/sass:25:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...olor: variables\": expected \";\", was \".$color-princip...\"\A         on line 21 of carrito.component.scss\A \A 16: \A 17: .tarjeta-producto-container {\A 18:   position: relative;\A 19:   display: flex;\A 20:   height: 100px;\A 21:   background-color: variables.$color-principal-claro;\A 22: \A 23:   > div {\A 24:     display: flex;\A 25:     flex-direction: column;\A 26:     justify-content: space-between;"; }
+  content: "Error: Invalid CSS after \"...dius: variables\": expected \";\", was \".$border-radius...\"\A         on line 13 of carrito.component.scss\A \A 8: \A 9: #tarjetas-container {\A 10:   display: flex;\A 11:   flex-direction: column;\A 12:   gap: 15px;\A 13:   border-radius: variables.$border-radius-chico;\A 14:   overflow: hidden;\A 15: }\A 16: \A 17: .tarjeta-producto-container {\A 18:   position: relative;"; }
