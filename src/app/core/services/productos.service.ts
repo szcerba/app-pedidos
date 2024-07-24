@@ -12,7 +12,7 @@ export class ProductosService {
   }
 
   async getByCategoria(id: number): Promise<Producto[]> {
-    const res = await fetch("assets/data/database.json");
+    const res = await fetch("./../../../assets/data/database.json");
     const resJson: Categoria[] = await res.json();
     const productos = resJson.find(categoria => categoria.id == id)?.productos;
     if (productos) return productos;
@@ -20,7 +20,7 @@ export class ProductosService {
   }
 
   async getAll(): Promise<Producto[]> {
-    const res = await fetch("assets/data/database.json");
+    const res = await fetch("./../../../assets/data/database.json");
     const resJson: Categoria[] = await res.json();
     let productos:Producto[] = [];
     resJson.forEach(categoria => {

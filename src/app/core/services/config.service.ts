@@ -7,7 +7,7 @@ import {Config} from "../interfaces/config";
 export class ConfigService {
 
   constructor() {
-    fetch("assets/data/configuracion.json").then(res => {
+    fetch("./../../../assets/data/configuracion.json").then(res => {
       res.json().then(resJson => {
         this.configuracion.set(resJson)
       })
